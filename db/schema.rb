@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222153756) do
+ActiveRecord::Schema.define(version: 20140225203013) do
+
+  create_table "profiles", force: true do |t|
+    t.string  "fav_color"
+    t.integer "fav_number"
+    t.string  "hometown"
+  end
 
   create_table "users", force: true do |t|
     t.string  "fname"
